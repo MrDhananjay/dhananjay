@@ -128,7 +128,7 @@ const mainTextElements = {
   },
   profession: {
     element: document.querySelector('.profession-text'),
-    text: 'AI Specialist',
+    text: 'Product Manager',
   },
   description: {
     element: document.querySelector('.description-text'),
