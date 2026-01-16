@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="./styles-index.css">
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="./styles-index.css">
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/107/three.min.js"></script>
 
 
 </head>
 
 <body>
 
-<!-- Navigation Bar -->
+  <!-- Navigation Bar -->
 
-<nav class="main-nav">
-  <div class="nav-container">
-    <!-- Menu Button -->
-    <button class="nav-btn menu-btn" id="menuBtn">
-      MENU
-    </button>
+  <nav class="main-nav">
+    <div class="nav-container">
+      <!-- Menu Button -->
+      <button class="nav-btn menu-btn" id="menuBtn">
+        MENU
+      </button>
 
-    <!-- Main Navigation Links -->
-    <div class="nav-links" id="navLinks">
-      <a href="#" class="nav-btn nav-link" id="homeBtn">HOME</a>
-      <a href="#" class="nav-btn nav-link" id="casesBtn">PROJECTS</a>
-      <a href="#" class="nav-btn nav-link" id="contactsBtn">CONTACT</a>
-</nav>
+      <!-- Main Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="nav-btn nav-link" id="homeBtn">HOME</a>
+        <a href="#" class="nav-btn nav-link" id="casesBtn">PROJECTS</a>
+        <a href="#" class="nav-btn nav-link" id="contactsBtn">CONTACT</a>
+  </nav>
 
-<div class="hero-section">
-<div class="hero_letters">
-  <!-- Letter D -->
-  <div class="letter-container">
-    <svg viewBox="0 0 242 319" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M181.44 1.40784H240.632V314.039H181.44V276.524C176.16 289.307 166.712 299.45 153.095 306.953C139.756 314.456 124.055 318.208 105.992 318.208C84.5937 318.208 65.8358 313.206 49.7179 303.202C33.8779 292.919 21.6505 279.164 13.0358 261.934C4.69894 244.427 0.530518 225.252 0.530518 204.41C0.530518 182.734 4.83789 163.42 13.4526 146.469C22.3453 129.239 34.9895 115.762 51.3853 106.035C67.781 96.3089 86.9558 91.4457 108.909 91.4457C123.36 91.4457 137.116 94.6415 150.177 101.033C163.238 107.425 173.659 116.456 181.44 128.128V1.40784Z"/>
-      <path class="hero_letter-path front" d="M181.44 1.40784H240.632V314.039H181.44V276.524C176.16 289.307 166.712 299.45 153.095 306.953C139.756 314.456 124.055 318.208 105.992 318.208C84.5937 318.208 65.8358 313.206 49.7179 303.202C33.8779 292.919 21.6505 279.164 13.0358 261.934C4.69894 244.427 0.530518 225.252 0.530518 204.41C0.530518 182.734 4.83789 163.42 13.4526 146.469C22.3453 129.239 34.9895 115.762 51.3853 106.035C67.781 96.3089 86.9558 91.4457 108.909 91.4457C123.36 91.4457 137.116 94.6415 150.177 101.033C163.238 107.425 173.659 116.456 181.44 128.128V1.40784Z"/>
-    </svg>
+  <div class="hero-section">
+    <div class="hero_letters">
+      <!-- Letter D -->
+      <div class="letter-container">
+        <svg viewBox="0 0 242 319" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M181.44 1.40784H240.632V314.039H181.44V276.524C176.16 289.307 166.712 299.45 153.095 306.953C139.756 314.456 124.055 318.208 105.992 318.208C84.5937 318.208 65.8358 313.206 49.7179 303.202C33.8779 292.919 21.6505 279.164 13.0358 261.934C4.69894 244.427 0.530518 225.252 0.530518 204.41C0.530518 182.734 4.83789 163.42 13.4526 146.469C22.3453 129.239 34.9895 115.762 51.3853 106.035C67.781 96.3089 86.9558 91.4457 108.909 91.4457C123.36 91.4457 137.116 94.6415 150.177 101.033C163.238 107.425 173.659 116.456 181.44 128.128V1.40784Z" />
+          <path class="hero_letter-path front"
+            d="M181.44 1.40784H240.632V314.039H181.44V276.524C176.16 289.307 166.712 299.45 153.095 306.953C139.756 314.456 124.055 318.208 105.992 318.208C84.5937 318.208 65.8358 313.206 49.7179 303.202C33.8779 292.919 21.6505 279.164 13.0358 261.934C4.69894 244.427 0.530518 225.252 0.530518 204.41C0.530518 182.734 4.83789 163.42 13.4526 146.469C22.3453 129.239 34.9895 115.762 51.3853 106.035C67.781 96.3089 86.9558 91.4457 108.909 91.4457C123.36 91.4457 137.116 94.6415 150.177 101.033C163.238 107.425 173.659 116.456 181.44 128.128V1.40784Z" />
+        </svg>
+      </div>
+
+      <!-- Letter H -->
+      <div class="letter-container">
+        <svg viewBox="0 0 216 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M59.6586 0.796V89.7678C65.2165 80.8751 73.2754 73.7857 83.8359 68.5052C94.3963 63.2246 106.346 60.5844 119.685 60.5844C146.919 60.5844 167.484 69.3389 181.379 86.8478C195.274 104.078 202.222 128.115 202.222 158.958V222.804H143.197V165.904C143.197 150.899 140.279 139.645 134.443 132.139C128.886 124.636 120.519 120.884 109.403 120.884C97.1757 120.884 87.3105 125.192 79.8073 133.807C72.5821 142.144 68.9694 154.511 68.9694 170.909V222.804H9.94408V0.796H59.6586Z" />
+          <path class="hero_letter-path front"
+            d="M59.6586 0.796V89.7678C65.2165 80.8751 73.2754 73.7857 83.8359 68.5052C94.3963 63.2246 106.346 60.5844 119.685 60.5844C146.919 60.5844 167.484 69.3389 181.379 86.8478C195.274 104.078 202.222 128.115 202.222 158.958V222.804H143.197V165.904C143.197 150.899 140.279 139.645 134.443 132.139C128.886 124.636 120.519 120.884 109.403 120.884C97.1757 120.884 87.3105 125.192 79.8073 133.807C72.5821 142.144 68.9694 154.511 68.9694 170.909V222.804H9.94408V0.796H59.6586Z" />
+        </svg>
+      </div>
+
+      <!-- Letter A -->
+      <div class="letter-container">
+        <svg viewBox="0 0 232 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z" />
+          <path class="hero_letter-path front"
+            d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z" />
+        </svg>
+      </div>
+
+      <!-- Letter N -->
+      <div class="letter-container">
+        <svg viewBox="0 0 216 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z" />
+          <path class="hero_letter-path front"
+            d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z" />
+        </svg>
+      </div>
+
+      <!-- Letter A -->
+      <div class="letter-container">
+        <svg viewBox="0 0 232 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z" />
+          <path class="hero_letter-path front"
+            d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z" />
+        </svg>
+      </div>
+
+      <!-- Letter N -->
+      <div class="letter-container">
+        <svg viewBox="0 0 216 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z" />
+          <path class="hero_letter-path front"
+            d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z" />
+        </svg>
+      </div>
+
+      <!-- Letter J -->
+      <div class="letter-container">
+        <svg viewBox="0 0 124 319" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M123.176 0.672852V213.054C123.176 239.732 115.95 260.573 101.5 275.577C87.0495 290.582 66.7958 298.085 40.7389 298.085C29.3452 298.085 18.7847 296.556 9.02099 293.499C-0.742715 290.442 -9.3575 285.856 -16.8607 279.742L4.57888 239.732C8.74731 243.345 13.472 246.124 18.7526 248.07C24.0331 250.015 29.7315 250.988 35.8452 250.988C46.6831 250.988 54.8815 247.931 60.4394 241.816C66.2752 235.98 69.1931 227.365 69.1931 215.972V0.672852H123.176Z" />
+          <path class="hero_letter-path front"
+            d="M123.176 0.672852V213.054C123.176 239.732 115.95 260.573 101.5 275.577C87.0495 290.582 66.7958 298.085 40.7389 298.085C29.3452 298.085 18.7847 296.556 9.02099 293.499C-0.742715 290.442 -9.3575 285.856 -16.8607 279.742L4.57888 239.732C8.74731 243.345 13.472 246.124 18.7526 248.07C24.0331 250.015 29.7315 250.988 35.8452 250.988C46.6831 250.988 54.8815 247.931 60.4394 241.816C66.2752 235.98 69.1931 227.365 69.1931 215.972V0.672852H123.176Z" />
+        </svg>
+      </div>
+
+      <!-- Letter A -->
+      <div class="letter-container">
+        <svg viewBox="0 0 232 219" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z" />
+          <path class="hero_letter-path front"
+            d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z" />
+        </svg>
+      </div>
+
+      <!-- Letter Y -->
+      <div class="letter-container">
+        <svg viewBox="0 0 240 319" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="hero_letter-path shadow"
+            d="M103.176 0L169.176 125.5V318.5H115.176V125.5L49.1763 0H103.176ZM239.176 0L173.176 125.5V318.5H119.176V125.5L185.176 0H239.176Z" />
+          <path class="hero_letter-path front"
+            d="M103.176 0L169.176 125.5V318.5H115.176V125.5L49.1763 0H103.176ZM239.176 0L173.176 125.5V318.5H119.176V125.5L185.176 0H239.176Z" />
+        </svg>
+      </div>
+    </div>
   </div>
 
-  <!-- Letter H -->
-  <div class="letter-container">
-    <svg viewBox="0 0 216 224" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M59.6586 0.796V89.7678C65.2165 80.8751 73.2754 73.7857 83.8359 68.5052C94.3963 63.2246 106.346 60.5844 119.685 60.5844C146.919 60.5844 167.484 69.3389 181.379 86.8478C195.274 104.078 202.222 128.115 202.222 158.958V222.804H143.197V165.904C143.197 150.899 140.279 139.645 134.443 132.139C128.886 124.636 120.519 120.884 109.403 120.884C97.1757 120.884 87.3105 125.192 79.8073 133.807C72.5821 142.144 68.9694 154.511 68.9694 170.909V222.804H9.94408V0.796H59.6586Z"/>
-      <path class="hero_letter-path front" d="M59.6586 0.796V89.7678C65.2165 80.8751 73.2754 73.7857 83.8359 68.5052C94.3963 63.2246 106.346 60.5844 119.685 60.5844C146.919 60.5844 167.484 69.3389 181.379 86.8478C195.274 104.078 202.222 128.115 202.222 158.958V222.804H143.197V165.904C143.197 150.899 140.279 139.645 134.443 132.139C128.886 124.636 120.519 120.884 109.403 120.884C97.1757 120.884 87.3105 125.192 79.8073 133.807C72.5821 142.144 68.9694 154.511 68.9694 170.909V222.804H9.94408V0.796H59.6586Z"/>
-    </svg>
-  </div>
-
-  <!-- Letter A -->
-  <div class="letter-container">
-    <svg viewBox="0 0 232 219" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z"/>
-      <path class="hero_letter-path front" d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z"/>
-    </svg>
-  </div>
-
-  <!-- Letter N -->
-  <div class="letter-container">
-    <svg viewBox="0 0 216 224" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z"/>
-      <path class="hero_letter-path front" d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z"/>
-    </svg>
-  </div>
-
-  <!-- Letter A -->
-  <div class="letter-container">
-    <svg viewBox="0 0 232 219" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z"/>
-      <path class="hero_letter-path front" d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z"/>
-    </svg>
-  </div>
-
-  <!-- Letter N -->
-  <div class="letter-container">
-    <svg viewBox="0 0 216 224" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z"/>
-      <path class="hero_letter-path front" d="M170.808 11.5753C184.054 18.1986 194.683 28.6825 202.699 43.0553C210.706 57.1362 214.724 74.83 214.724 96.1676V222.804H155.699V105.338C155.699 85.834 151.244 71.9055 142.202 63.7059C133.484 55.2719 122.379 51.0654 108.929 51.0654C93.8085 51.0654 81.7187 55.8306 72.7166 65.3954C63.9822 74.9749 59.6586 89.0103 59.6586 107.422V222.804H0.633301V5.79597H49.78L58.8451 36.6999L59.7505 36.8215C74.3786 13.0853 96.8567 1.21069 127.27 1.21069C143.034 1.21069 157.544 4.66697 170.808 11.5753Z"/>
-    </svg>
-  </div>
-
-  <!-- Letter J -->
-  <div class="letter-container">
-    <svg viewBox="0 0 124 319" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M123.176 0.672852V213.054C123.176 239.732 115.95 260.573 101.5 275.577C87.0495 290.582 66.7958 298.085 40.7389 298.085C29.3452 298.085 18.7847 296.556 9.02099 293.499C-0.742715 290.442 -9.3575 285.856 -16.8607 279.742L4.57888 239.732C8.74731 243.345 13.472 246.124 18.7526 248.07C24.0331 250.015 29.7315 250.988 35.8452 250.988C46.6831 250.988 54.8815 247.931 60.4394 241.816C66.2752 235.98 69.1931 227.365 69.1931 215.972V0.672852H123.176Z"/>
-      <path class="hero_letter-path front" d="M123.176 0.672852V213.054C123.176 239.732 115.95 260.573 101.5 275.577C87.0495 290.582 66.7958 298.085 40.7389 298.085C29.3452 298.085 18.7847 296.556 9.02099 293.499C-0.742715 290.442 -9.3575 285.856 -16.8607 279.742L4.57888 239.732C8.74731 243.345 13.472 246.124 18.7526 248.07C24.0331 250.015 29.7315 250.988 35.8452 250.988C46.6831 250.988 54.8815 247.931 60.4394 241.816C66.2752 235.98 69.1931 227.365 69.1931 215.972V0.672852H123.176Z"/>
-    </svg>
-  </div>
-
-  <!-- Letter A -->
-  <div class="letter-container">
-    <svg viewBox="0 0 232 219" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z"/>
-      <path class="hero_letter-path front" d="M99.6176 108.796C92.9659 130.691 80.7804 167.114 63.0584 218.071L1.19724 218.071L84.1832 1.0625L143.527 1.06249L231.077 218.071L167.975 218.071C148.865 165.445 135.707 128.184 128.499 106.284C121.276 84.3361 116.42 67.2673 113.925 55.0686L112.941 55.0898C110.723 68.9526 106.284 86.8525 99.6176 108.796Z"/>
-    </svg>
-  </div>
-
-  <!-- Letter Y -->
-  <div class="letter-container">
-    <svg viewBox="0 0 240 319" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path class="hero_letter-path shadow" d="M103.176 0L169.176 125.5V318.5H115.176V125.5L49.1763 0H103.176ZM239.176 0L173.176 125.5V318.5H119.176V125.5L185.176 0H239.176Z"/>
-      <path class="hero_letter-path front" d="M103.176 0L169.176 125.5V318.5H115.176V125.5L49.1763 0H103.176ZM239.176 0L173.176 125.5V318.5H119.176V125.5L185.176 0H239.176Z"/>
-    </svg>
-  </div>
-</div>
-</div>
-
-<div class="text-container">
-  <p class="name-text"> Dhananjay Singh</p>
-  <p class="profession-text">AI Specialist</p>
+  <div class="text-container">
+    <p class="name-text"> Dhananjay Singh</p>
+    <p class="profession-text">Product Manager</p>
   </div>
   <div class="right-text-container">
     <p class="description-text">Full Stack Developer</p>
@@ -122,29 +141,36 @@
 
   <section class="sticky">
     <p>
-      "Hi, I'm Dhananjay, an AI Specialist with a Master's degree in Artificial Intelligence from Queen Mary University of London. My journey in tech started as a Python Backend Engineer, where I honed my skills in building robust systems. Today, I specialize in crafting AI-driven solutions that bridge the gap between innovation and real-world impact. Fueled by a passion for solving complex problems, I thrive on designing intelligent systems that make life smarter, faster, and better. Whether it's optimizing processes, creating scalable machine learning models, or exploring the boundaries of AI, I'm driven by the excitement of shaping a more intelligent future. If all of this is a simulation, what are you afraid of?“
+      "Hi, I'm Dhananjay, an AI Specialist with a Master's degree in Artificial Intelligence from Queen Mary University
+      of London. My journey in tech started as a Python Backend Engineer, where I honed my skills in building robust
+      systems. Today, I specialize in crafting AI-driven solutions that bridge the gap between innovation and real-world
+      impact. Fueled by a passion for solving complex problems, I thrive on designing intelligent systems that make life
+      smarter, faster, and better. Whether it's optimizing processes, creating scalable machine learning models, or
+      exploring the boundaries of AI, I'm driven by the excitement of shaping a more intelligent future. If all of this
+      is a simulation, what are you afraid of?“
     </p>
   </section>
 
   <section class="work">
     <div class="text-container"></div>
   </section>
-  
+
   <div class="video-container">
-  <video autoplay muted loop playsinline>
-    <source src="./resources/Like You Do.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+    <video autoplay muted loop playsinline>
+      <source src="./resources/Like You Do.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 
- 
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="./script.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="./script.js"></script>
 
 </body>
+
 </html>
